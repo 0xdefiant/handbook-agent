@@ -49,19 +49,6 @@ Handbook Agent is designed to extract structured information from PDF documents,
 
 ## Usage
 
-### Analyzing a PDF
-
-To analyze a PDF and get AI recommendations for search optimization:
-
-bash
-python pdf_analyzer.py path/to/your/document.pdf
-
-This will:
-- Extract text with formatting information
-- Categorize text based on formatting
-- Get AI recommendations for search optimization
-- Create a searchable index structure
-
 ### Indexing a PDF
 
 To create a searchable index for a PDF:
@@ -84,6 +71,19 @@ This will start an interactive search interface with the following commands:
 - `weighted <query>` - Use weighted fields for more relevant results
 - `help` - Display help information
 - `exit` - Exit the program
+
+### Analyzing a PDF
+
+If things aren't working, use this script to analyze a PDF and get AI recommendations for search optimization:
+
+bash
+python pdf_analyzer.py path/to/your/document.pdf
+
+This will:
+- Extract text with formatting information
+- Categorize text based on formatting
+- Get AI recommendations for search optimization
+- Create a searchable index structure
 
 ## Example
 
