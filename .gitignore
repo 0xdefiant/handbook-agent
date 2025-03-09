@@ -1,0 +1,89 @@
+# Add content to .gitignore
+cat > .gitignore << 'EOL'
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+*.so
+
+# Java
+*.class
+*.jar
+*.war
+.gradle/
+build/
+target/
+
+# Large media files
+*.mp4
+*.mov
+*.wmv
+*.avi
+*.mp3
+*.wav
+*.flac
+*.pdf
+*.psd
+*.ai
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+*.sublime-workspace
+
+# Build directories
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+tmp/
+temp/
+EOL
+
+indexdir/
+
+# Add the .gitignore file to the repository
+git add .gitignore
+
+# Commit the changes
+git commit -m "Add .gitignore file"
